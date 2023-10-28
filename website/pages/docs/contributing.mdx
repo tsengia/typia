@@ -18,4 +18,26 @@ Basic steps to getting started with developing Typia:
 2. Correctness
 3. For JSON related features, exact `JSON.stringify()` and `JSON.parse()` compatibility
 
-## Typia Internal Structure
+## Typia's Repository Structure
+The Typia repository has the following folder structure:
+```
+typia
+├─── benchmark          Code for performance benchmarks
+├─── build
+├─── errors             Test cases that Typia explicitly lacks support for
+├─── packages
+├─── src                Source code for Typia
+│    ├ executable       Code for the Typia CLI interface
+│    ├ factories        Factory methods that produce Typescript code during transformation
+│    ├ functional       Functional helper routines
+│    ├ programmers      
+│    ├ schemas
+│    │ ├ json           Classes for Swagger/OpenAPI specifications
+│    │ └ metadata       Classes that store information about the TypeScript AST during transformation
+│    ├ tags             Code for validation tags
+│    ├ transformers     Modules for performing the TypeScript transformation
+│    ├ typings          Helper type definitions
+│    └ utils            Helper functions
+├─── test               Test suite source code
+└─── website            MDX files for the typia.io website
+```
