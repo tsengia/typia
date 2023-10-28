@@ -12,6 +12,7 @@
     "protobuf": "Protocol Buffer",
     "random": "Random Generator",
     "misc": "Miscellaneous",
+    "contributing": "Contributing",
 
     "-- appendix": {
         "type": "separator",
